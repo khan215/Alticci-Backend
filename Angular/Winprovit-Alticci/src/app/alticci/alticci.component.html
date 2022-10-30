@@ -1,0 +1,19 @@
+<div class="parent">
+  <p>
+    alticci works!
+  </p>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Input</mat-label>
+      <input matInput [(ngModel)]="inputValue" placeholder="Input a number" required>
+    </mat-form-field>
+  <button mat-flat-button color="accent"
+    (click) = "calculateAlticci(inputValue);"
+  > Generate </button>
+  <br />
+  {{response.response}}
+<div>
+  {{response.responseCodeDescription}}
+  </div>
+</div>
+
+
